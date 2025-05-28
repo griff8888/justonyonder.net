@@ -1,0 +1,25 @@
+
+body {
+    background-color: rgb(24, 117, 154); /* outer background */
+}
+
+.homepageText {
+    background-color: rgb(88, 179, 210); /* inner background */
+    border: 2px solid black;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-top: 0px;
+    box-shadow: 0px 0px 20px 10px rgb(66, 62, 62);
+}
+
+.buttons {
+    button {
+        float: left;
+        border: 1px solid black;
+        width: 12.5%;
+        font-size: 20px;
+    }
+}
