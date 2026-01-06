@@ -1,35 +1,30 @@
 
-body, html {
+html {
     height: 100%;
 }
 
 
 body {
-    /* background-color: rgb(24, 117, 154); */
     background-image: url("assets/images/website_background.png");
-    margin-top: 3%;
-    margin-bottom: 3%;
+    margin: 3% 0;
     font-family: banner;
+    height: 100%;
 }
 
 p {
-    background-color: rgb(88, 179, 210);
+    background-color: rgb(102, 138, 97);
 }
 
 .homepageText {
-    /* background-color: rgb(88, 179, 210); /* inner background */
     background-image: url("assets/images/woodgrain.png");
     border: 2px solid black;
     background-size: contain;
     background-repeat: repeat;
     border-top-style: none;
-    margin-left: 20%;
-    margin-right: 20%;
-    /* margin-top: 30px; */
-    margin-bottom: 30px;
+    margin: 0 20%;
     padding: 20px;
     padding-top: 0px;
-    box-shadow: 0px 0px 20px 10px rgb(201, 192, 192);
+    box-shadow: 0px 0px 15px 10px rgb(201, 192, 192);
 }
 
 .buttons {
@@ -43,9 +38,9 @@ p {
         width: 20%;
         font-size: 20px;
         font-family: banner;
-        background-color: transparent;
+        background-color: rgb(102, 138, 97);
         cursor: pointer;
-        transition-duration: 0.4ss;
+        transition-duration: .2s;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -54,7 +49,8 @@ p {
     }
 
     a:hover {
-        background-color: gray;
+        background-color: rgb(49, 66, 46)
+        
     }
 }
 
@@ -65,7 +61,6 @@ p {
 
 .topBanner {
     height: 250px;
-    box-shadow: 0px 0px 0px 0px rgb(201, 192, 192);
 }
 .topBanner .hero-image {
     background-image: url("assets/images/corn-field.jpg");
@@ -73,11 +68,11 @@ p {
     background-position: center;
     background-size: cover;
     position: relative;
-    margin-left: 20%;
-    margin-right: 20%;
+    /* margin-left: 20%;
+    margin-right: 20%; */
+    margin: 0 20%;
     border: 2px solid black;
-    border-bottom-style: none;
-    box-shadow: 0px 0px 0px 0px rgb(201, 192, 192);
+    box-shadow: 0px -10px 15px 0px rgb(201, 192, 192);
 }
 
 .topBanner .hero-text {
@@ -117,7 +112,7 @@ p {
     border: 2px solid black;
     margin: 3%;
     padding: -5%;
-    background-color: rgb(88, 179, 210);
+    background-color: rgb(102, 138, 97);
 }
 
 .post h1{
@@ -128,10 +123,11 @@ p {
 .post img {
     width: 100%;
     padding: 0%;
+    border: 2px solid black;
 }
 
 .post .imgLeft {
-    margin: 1%;
+    margin: 10px;
     display: grid;
     align-items: center; 
     grid-template-columns: 30% 70%;
@@ -146,4 +142,19 @@ p {
     grid-template-columns: 70% 30%;
     column-gap: 5px;
     padding: 0%;
+}
+
+footer {
+    background-image: url("assets/images/test3.png");
+    background-size: cover;
+    position: relative;
+    background-repeat: repeat;
+    height: 200px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer p {
+    background-color: transparent;
 }

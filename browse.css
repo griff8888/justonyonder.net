@@ -13,8 +13,11 @@ body {
 }
 
 .homepageText {
-    background-color: rgb(88, 179, 210); /* inner background */
+    /* background-color: rgb(88, 179, 210); /* inner background */
+    background-image: url("assets/images/woodgrain.png");
     border: 2px solid black;
+    background-size: contain;
+    background-repeat: repeat;
     border-top-style: none;
     margin-left: 20%;
     margin-right: 20%;
@@ -22,17 +25,15 @@ body {
     margin-bottom: 30px;
     padding: 20px;
     padding-top: 0px;
-    box-shadow: 0px 0px 20px 10px rgb(201, 192, 192);
+    box-shadow: 0px 0px 15px 10px rgb(201, 192, 192);
 }
 
 .buttons {
 
-    
     padding: 0px;
     display: flex;
     justify-content: center;
     gap: 0px;
-    
 
     a {
         
@@ -40,9 +41,9 @@ body {
         width: 20%;
         font-size: 20px;
         font-family: banner;
-        background-color: transparent;
+        background-color: rgb(102, 138, 97);
         cursor: pointer;
-        transition-duration: 0.4ss;
+        transition-duration: .2s;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -51,7 +52,8 @@ body {
     }
 
     a:hover {
-        background-color: gray;
+        background-color: rgb(49, 66, 46)
+        
     }
 }
 
@@ -132,10 +134,40 @@ body {
     column-gap: 10px;
     row-gap: 10px;
     padding: 0%;
-    position: relative; 
 }
 
-.imgGrid img {
-    width: 100%;
 
+.container {
+    width: 100%;
+    position: relative;
+    
+    /* align-items: center; */
+}
+
+.container img {
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 5px;
+
+    background-color: rgba(102, 138, 97, 0.7);
+    padding: 8px 14px;
+    
+    width: 91.25%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    white-space: normal; 
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    
 }
