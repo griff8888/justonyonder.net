@@ -115,9 +115,11 @@ p {
     background-color: rgb(102, 138, 97);
 }
 
-.post h1{
+.post h1, h3{
     text-align: center;
     font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .post img {
@@ -145,7 +147,7 @@ p {
 }
 
 footer {
-    background-image: url("assets/images/test3.png");
+    background-image: url("assets/images/test4.png");
     background-size: cover;
     position: relative;
     background-repeat: repeat;
