@@ -1,23 +1,18 @@
 html {
     height: 100%;
+    font-family: banner;
+    font-weight: 575;
 }
 
-
 body {
-    /* background-color: rgb(24, 117, 154); */
-    /* margin-top: 3%;
-    margin-bottom: 3%; */
-    font-family: banner;
+    /* background-image: url("assets/images/camo.jpg"); */
+    /* margin: 3% 0; */
     margin: 0;
-}   
+    /* height: 100%; */
+}
 
 p {
     background-color: rgb(102, 138, 97);
-}
-
-img {
-    border: 2px solid black;
-    border-radius: 6px;
 }
 
 /* FONT */
@@ -25,6 +20,11 @@ img {
 @font-face {
     font-family: banner;
     src: url(assets/font/NewTegomin-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(assets/font/Roboto-Black.ttf)
 }
 
 /* BANNER */
@@ -60,13 +60,11 @@ img {
 
 .buttons {
 
+    margin-left: 15%;
     padding: 0px;
-    display: flex;
-    justify-content: center;
-    gap: 0px;
 
     a {
-        
+        float: left;
         border: 1px solid black;
         width: 20%;
         font-size: 20px;
@@ -83,27 +81,17 @@ img {
 
     a:hover {
         background-color: rgb(49, 66, 46)
-        
     }
 }
 
 /* ORGANIZATION */
 
-
 .homepageText {
-    /* background-color: rgb(88, 179, 210); /* inner background */
     background-image: url("assets/images/backgrounds/woodgrain.png");
     border: 2px solid black;
     background-size: contain;
     background-repeat: repeat;
     border-top-style: none;
-    /* margin-left: 20%;
-    margin-right: 20%; */
-    /* margin-top: 30px; */
-    /* margin-bottom: 30px; */
-    padding: 20px;
-    padding-top: 0px;
-    /* box-shadow: 0px 0px 15px 10px rgb(201, 192, 192); */
 }
 
 .pageGrid {
@@ -121,55 +109,94 @@ img {
 /* contain and repeat might mess things up eventually ??? */
 .rightBG {
     background-image: url("assets/images/backgrounds/right.png");
-    background-size:cover;
+    background-size: cover;
     background-position: right;
     background-repeat: repeat;
 }
 
-/* GALLERY */
+/* BLOG */
 
-.imgGrid {
-    margin: 5%;
+.post {
+    height: 100%;
+    border: 2px solid black;
+    margin: 3%;
+    padding: 1%;
+    padding-top: 0;
+    background-color: rgb(102, 138, 97);
+    border-radius: 6px;
+}
+
+.post h1, h3, h4 {
+    text-align: center;
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post h1 {
+    line-height: 30px;
+}
+
+.post h3 {
+    line-height: 20px;
+}
+
+.post h4 {
+    line-height: 17px;
+}
+
+.post img {
+    width: 100%;
+    padding: 0%;
+    border: 2px solid black;
+    border-radius: 6px;
+    align-items: center;
+}
+
+.post .imgLeft {
+    /* margin: 10px; */
     display: grid;
     align-items: center; 
-    grid-template-columns:  repeat(3, 1fr);
+    grid-template-columns: 30% 70%;
     column-gap: 10px;
-    row-gap: 10px;
-    padding: 0%;
+    /* padding: 0%; */
+    padding-top: 0;
 }
 
-.container {
-    width: 100%;
-    position: relative;
+.post .imgRight {
+    /* margin: 1%; */
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 70% 30%;
+    column-gap: 10px;
+    /* padding: 0%; */
+    padding-top: 0;
 }
 
-.container img {
-    width: 100%;
+.post1 .notebook {
+    width: 90%;
 }
 
-.overlay {
-    position: absolute;
-    bottom: 5px;
-
-    background-color: rgba(102, 138, 97, 0.7);
-    padding: 8px 14px;
-    
-    width: 91.25%;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+.jambase img {
+    width: 85%;
 }
 
-.container:hover .overlay {
-    opacity: 1;
+.imgRight h2 {
+    text-align:  right;
+    margin-bottom: 0;
 }
 
-.text {
-    white-space: normal; 
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    
-} 
+.imgRight p {
+    margin-top: 0;
+}
+
+.imgLeft h2 {
+    margin-bottom: 0;
+}
+
+.imgLeft p {
+    margin-top: 0;
+}
 
 /* FOOTER */
 
@@ -191,7 +218,3 @@ footer p {
     border: 2px solid black;
     border-radius: 6px;
 }
-
-
-
-

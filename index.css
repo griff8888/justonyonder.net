@@ -128,14 +128,16 @@ p {
 
 .leftBG {
     background-image: url("assets/images//backgrounds/left.png");
-    background-size: cover;
+    background-size: contain; 
     background-position:left;
+    background-repeat: repeat;
 }
-
+/* contain and repeat might mess things up eventually ??? */
 .rightBG {
     background-image: url("assets/images/backgrounds/right.png");
-    background-size:cover;
+    background-size:contain;
     background-position: right;
+    background-repeat: repeat;
 }
 
 /* BLOG */
@@ -199,7 +201,6 @@ p {
     width: 90%;
 }
 
-
 /* FOOTER */
 
 footer {
@@ -215,5 +216,8 @@ footer {
 }
 
 footer p {
-    background-color: transparent;
+    background-color: rgb(102, 138, 97);
+    margin: 5% 20%;
+    border: 2px solid black;
+    border-radius: 6px;
 }
