@@ -209,6 +209,10 @@ p {
     width: 95%
 }
 
+.post5 img {
+    border: 1px solid black;
+}
+
 /* FOOTER */
 
 footer {
