@@ -197,7 +197,11 @@ p {
     /* padding: 0%; */
 }
 
-.post1 .notebook {
+.imgRight img {
+    width: 95%
+}
+
+/* .post1 .notebook {
     width: 95%;
 }
 
@@ -207,7 +211,7 @@ p {
 
 .bob {
     width: 95%
-}
+} */
 
 .post5 img {
     border: 1px solid black;
