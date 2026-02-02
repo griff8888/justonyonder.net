@@ -187,6 +187,9 @@ footer {
     margin: 0;
     padding: 0%;
     grid-column: 1 / -1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 footer p {
@@ -194,4 +197,7 @@ footer p {
     margin: 5% 20%;
     border: 2px solid black;
     border-radius: 6px;
+    width: fit-content;
+    text-align: center;
+    padding: 1%;
 }
